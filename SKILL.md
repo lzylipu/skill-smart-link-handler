@@ -1,6 +1,26 @@
 ---
 name: smart-link-handler
-description: 智能链接处理 - 夸克/YouTube/B站链接自动识别下载
+description: "Smart link handler - auto-detect and download Quark/YouTube/Bilibili links"
+version: 13.0.0
+author: lzylipu
+license: MIT
+platforms: [linux]
+prerequisites:
+  env_vars: [QAS_ENDPOINT, QAS_TOKEN, ALIST_ENDPOINT, ALIST_TOKEN, ARIA2_ENDPOINT, ARIA2_TOKEN]
+  services:
+    - name: QAS
+      description: "Quark Auto Save service"
+    - name: Alist
+      description: "File listing service"
+    - name: aria2
+      description: "Download manager RPC"
+metadata:
+  hermes:
+    tags: [quark, youtube, bilibili, download, video, link, 夸克, 下载, 链接]
+    related_skills: [daily-morning-brief, vpn-connect]
+    homepage: https://github.com/lzylipu/openclaw-skill-smart-link-handler
+    category: personal
+    skill_type: automation
 ---
 
 # Smart Link Handler
